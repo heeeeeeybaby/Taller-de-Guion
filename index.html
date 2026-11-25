@@ -24,12 +24,14 @@
   .desc p { margin:0 0 14px; font-size:18px; }
   .desc .example { font-weight:700; }
   .card { background:var(--gray); border-radius:16px; overflow:hidden; }
-  .bar { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; background:rgba(0,0,0,.06); position:sticky; top:0; }
+  .bar { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; background:rgba(0,0,0,.06); }
   .bar b { color:var(--dark); font-size:15px; }
   button.copy { cursor:pointer; border:0; border-radius:999px; background:var(--cyan); color:#fff; font-weight:700; font-size:16px; padding:10px 22px; font-family:inherit; }
   button.copy:hover { filter:brightness(.93); }
   button.copy.done { background:#2e9e5b; }
-  pre { margin:0; padding:20px; white-space:pre-wrap; word-wrap:break-word; font-family:inherit; font-size:15px; color:#000; }
+  pre { margin:0; padding:20px; height:380px; overflow-y:auto; -webkit-overflow-scrolling:touch; white-space:pre-wrap; word-wrap:break-word; font-family:inherit; font-size:15px; color:#000; scrollbar-width:thin; scrollbar-color:#8b97a1 transparent; }
+  pre::-webkit-scrollbar { width:8px; } pre::-webkit-scrollbar-thumb { background:#8b97a1; border-radius:8px; }
+  @media (max-width:640px){ pre { height:300px; font-size:14px; } }
   section.pick, section.pick:nth-of-type(even) { background:#fff; padding:8px 20px 36px; }
   .pick-inner { max-width:900px; margin:0 auto; text-align:center; }
   .pick-inner p { font-size:18px; margin:0 0 28px; }
