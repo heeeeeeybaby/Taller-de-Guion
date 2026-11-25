@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taller de Guión · Ejercicio práctico</title>
+<style>
+  :root { --cyan:#00bcd4; --dark:#141120; --gray:#c8d1d9; --text:#545454; --bg:#f5fafa; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin:0; background:#fff; color:var(--text); font-family: "Helvetica Neue", Arial, sans-serif; line-height:1.5; }
+  header { text-align:center; padding:72px 20px 48px; }
+  header h1 { margin:0; color:var(--dark); font-size:clamp(34px,6vw,60px); }
+  header p { margin:12px 0 0; color:var(--cyan); font-weight:700; font-size:clamp(20px,3vw,30px); }
+  nav { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; padding:0 20px 40px; }
+  nav a { text-decoration:none; color:var(--dark); font-weight:700; border:2px solid var(--cyan); border-radius:999px; padding:8px 18px; font-size:15px; }
+  nav a:hover { background:var(--cyan); color:#fff; }
+  section { padding:56px 20px; }
+  section:nth-of-type(even) { background:var(--bg); }
+  .wrap { max-width:1000px; margin:0 auto; display:grid; grid-template-columns: 1fr 1.6fr; gap:40px; align-items:start; }
+  @media (max-width:820px){ .wrap { grid-template-columns:1fr; gap:24px; } }
+  h2 { margin:0 0 14px; font-size:clamp(24px,3.4vw,30px); color:var(--dark); line-height:1.25; }
+  h2 span { color:var(--cyan); }
+  .desc p { margin:0 0 14px; font-size:18px; }
+  .desc .example { font-weight:700; }
+  .card { background:var(--gray); border-radius:16px; overflow:hidden; }
+  .bar { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; background:rgba(0,0,0,.06); position:sticky; top:0; }
+  .bar b { color:var(--dark); font-size:15px; }
+  button.copy { cursor:pointer; border:0; border-radius:999px; background:var(--cyan); color:#fff; font-weight:700; font-size:16px; padding:10px 22px; font-family:inherit; }
+  button.copy:hover { filter:brightness(.93); }
+  button.copy.done { background:#2e9e5b; }
+  pre { margin:0; padding:20px; white-space:pre-wrap; word-wrap:break-word; font-family:inherit; font-size:15px; color:#000; }
+  footer { text-align:center; padding:32px 20px 56px; font-size:14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Taller de Guión</h1>
+  <p>Ejercicio práctico</p>
+</header>
+
+<nav>
+  <a href="#paso-1">Paso 1</a>
+  <a href="#paso-2">Paso 2</a>
+  <a href="#paso-3">Paso 3</a>
+</nav>
+
+<section id="paso-1">
+  <div class="wrap">
+    <div class="desc">
+      <h2><span>Paso 1:</span> Definir la identidad, la idea principal y de qué voy a hablar</h2>
+      <p>Copia y pega este prompt en tu chat IA de preferencia, puede ser ChatGPT, Claude o similar.</p>
+      <p>Deberás obtener un texto como este:</p>
+      <p class="example">Soy CAKE ROCK, una pastelería buena onda y rockera que hace tortas con portadas de discos de rock. Me dirijo a gente de entre 25 y 55 años de Santiago, y quiero mostrar mi producto y mi identidad mezclando los gustos musicales con la pastelería. Todas las semanas recordaré un disco clásico contando una anécdota sobre él y mostrando mis tortas.</p>
+    </div>
+    <div class="card">
+      <div class="bar"><b>Prompt · Paso 1</b><button class="copy" data-target="p1">Copiar prompt</button></div>
+<pre id="p1">Actúa como experto en marketing y branding para negocios que empiezan en redes sociales. Tu trabajo es convertir información desordenada sobre un negocio (puede venir de un audio transcrito, con repeticiones, errores o poco orden) en una definición breve y clara, lista para usar como entrada de otro prompt.
+
+PASO 1 · PREGUNTA INICIAL
+Tu primer mensaje debe ser SOLO esta pregunta, sin nada más:
+"Cuéntame sobre tu negocio como te salga: puedes escribir o pegar la transcripción de un audio. Lo ideal es que menciones el nombre de la marca, qué vendes, a quién quieres llegar, qué quieres mostrar y de qué temas te gustaría hablar en tus videos."
+
+PASO 2 · REVISIÓN
+Lee lo que te cuenten y ordénalo. Si falta alguno de estos datos esenciales: nombre de la marca, qué vende y a quién quiere llegar, pregunta SOLO por lo que falte, una pregunta por mensaje, corta. Si el resto no está claro, no preguntes: redáctalo con lo que hay, sin inventar nada.
+
+PASO 3 · RESULTADO
+Entrega SOLO un texto de 1 o 2 párrafos cortos, sin títulos, etiquetas, viñetas ni introducción, redactado en primera persona, con frases fluidas y tono cercano. El texto debe incluir, en este orden y de forma natural:
+1. Quién soy: el nombre de la marca (en mayúsculas), qué es y qué vende.
+2. A quién me dirijo: edad, ciudad y gustos del público.
+3. Qué quiero lograr y cómo me quiero mostrar.
+4. De qué hablaré en mis contenidos y cada cuánto.
+
+Reglas:
+- Usa solo la información que te di. No inventes datos, cifras ni ideas nuevas.
+- Corrige redacción y ortografía y elimina muletillas, pero mantén mi estilo y mis palabras clave.
+- Máximo 100 palabras en total y termina con esta línea aparte: "¿Quieres cambiar algo? Si está bien, pega ahora en este mismo chat el prompt de la parrilla de contenidos y seguimos."</pre>
+    </div>
+  </div>
+</section>
+
+<section id="paso-2">
+  <div class="wrap">
+    <div class="desc">
+      <h2><span>Paso 2:</span> Amplificando ideas con IA</h2>
+      <p>Copia y pega este prompt en tu chat IA de preferencia, puede ser ChatGPT, Claude o similar.</p>
+      <p>Aquí te pedirá la descripción de tu negocio que hiciste en el paso 1, en caso de que hayas decidido realizar este paso en un nuevo chat.</p>
+    </div>
+    <div class="card">
+      <div class="bar"><b>Prompt · Paso 2</b><button class="copy" data-target="p2">Copiar prompt</button></div>
+<pre id="p2">Actúa como experto en contenido viral y asesor de negocios en línea. Crearás una parrilla de contenidos para un negocio que empieza en redes sociales.
+
+PASO 1 · DEFINICIÓN DEL NEGOCIO
+Revisa esta conversación. Si ya hay una definición del negocio (nombre de la marca, qué vende, público, idea principal y temas de contenido), úsala tal cual, NO la pidas de nuevo y pasa directo al paso 2. Si no hay ninguna, tu primer mensaje debe ser SOLO esta pregunta, sin nada más:
+"Pega aquí la definición de tu negocio (nombre de la marca, qué vendes, a quién quieres llegar, qué quieres mostrar y de qué hablarás). Si no la tienes, cuéntame lo que sepas, aunque sea poco."
+
+PASO 2 · ENTREVISTA
+Identifica qué datos ya están en la definición y pregunta SOLO los que falten, uno por mensaje, corto: red social y estado de la cuenta (seguidores, publicaciones, fecha de creación), meta y plazo, publicaciones por semana y meses de parrilla, recursos para grabar (¿aparezco en cámara?, ¿qué equipo tengo?), y fechas importantes o cosas que no quiera hacer.
+Si digo "no sé", propón 2 o 3 opciones. Si ya lo dije todo, salta al paso 3. No preguntes nada que ya esté en la conversación.
+
+PASO 3 · CONFIRMACIÓN
+Resume en 5 líneas lo que entendiste, incluyendo el nombre de la marca, y pregunta si está correcto. Espera mi respuesta.
+
+PASO 4 · ENTREGA
+Genera:
+- 4 pilares de contenido en una línea cada uno, partiendo de los temas que indiqué, y una sección fija semanal con nombre propio que incluya el nombre de la marca.
+- Una tabla por mes con estas columnas:
+ | Semana | Día | Pilar | Gancho | Idea en una línea | Formato | CTA | Objetivo |
+
+Reglas: no superes mi ritmo semanal, mezcla contenido educativo, divertido, informativo y de producto, incluye mis ideas, usa solo recursos que tengo y asegura que cada semana haya contenido para ganar seguidores y contenido que muestre el producto. Usa el nombre de la marca en los ganchos, las secciones y los CTA cuando aporte. Lenguaje simple y cercano.
+
+Termina preguntando qué idea quiero desarrollar en guión.</pre>
+    </div>
+  </div>
+</section>
+
+<section id="paso-3">
+  <div class="wrap">
+    <div class="desc">
+      <h2><span>Paso 3:</span> Convertir a guión</h2>
+      <p>Copia y pega este prompt en tu chat IA de preferencia, puede ser ChatGPT, Claude o similar.</p>
+      <p>Si lo haces en un chat nuevo, te pedirá la idea del video que quieres desarrollar.</p>
+    </div>
+    <div class="card">
+      <div class="bar"><b>Prompt · Paso 3</b><button class="copy" data-target="p3">Copiar prompt</button></div>
+<pre id="p3">Eres director de contenido para reels y videos cortos hechos 100% en casa. Tu trabajo es convertir la idea de un video en una "receta de grabación": simple, ordenada y fácil de ejecutar por alguien SIN experiencia en video, usando solo un celular.
+
+═══ 0. PRIMER PASO (OBLIGATORIO) ═══
+Revisa esta conversación antes de responder:
+
+- CASO A: ya hay una parrilla de contenidos y la persona indicó cuál idea desarrollar (por número, semana, título o pegando la fila). Usa esa idea y NO preguntes nada sobre ella. Toma de la conversación el nombre de la marca, el estilo, el público, los recursos y si aparece en cámara, y úsalos en el guión.
+- CASO B: hay una parrilla pero la persona no indicó qué idea desarrollar. Tu primer mensaje debe ser SOLO esta pregunta: "¿Cuál idea de la parrilla quieres que desarrolle? Dime el número de semana y el título, o pega la fila."
+- CASO C: no hay parrilla en la conversación. Tu primer mensaje debe ser SOLO esta pregunta, sin nada más: "¿Cuál es la idea del video al que le haremos el guión? Cuéntamela como la tengas: una frase, un párrafo o la fila de tu planilla. Si lo sabes, agrega también: nombre de la marca, duración, plataforma (Reel, TikTok, Shorts), gancho o título, CTA (llamado a la acción) y si vas a aparecer en cámara."
+
+No generes el guión hasta tener la idea.
+
+═══ 1. REGLAS DE PRODUCCIÓN ═══
+- Todo se graba en casa, con una persona, un celular y objetos del hogar. Formato vertical 9:16.
+- Prohibido proponer dron, grúa, dolly, gimbal o equipos que no tengan en casa.
+- Pocas tomas, pocas ubicaciones (máximo 2) y que se puedan grabar en pocos intentos.
+- Respeta los recursos y limitaciones que la persona ya dijo en la conversación (equipo, tiempo, si aparece o no en cámara).
+- Si falta un dato que cambie el guión, haz máximo 3 preguntas cortas. Si no es crítico, asume y anótalo en "Supuestos". Si no indican duración, asume 15 a 30 segundos. Si la idea viene de la parrilla, usa su formato y su CTA.
+
+═══ 2. CATÁLOGO INTERNO DE MOVIMIENTOS (uso interno: NO lo muestres) ═══
+Elige los movimientos de esta lista (basada en aicameramovements.com) y tradúcelos SIEMPRE a lenguaje simple y a su versión casera. Nunca muestres el nombre técnico en inglés.
+
+- Static shot → "Toma fija: celular quieto en el trípode (o apoyado en libros)."
+- Pan right/left → "Paneo suave: gira el celular lentamente hacia la derecha/izquierda."
+- Whip pan → "Giro rápido: gira el celular de golpe hacia un lado (o hazlo en la edición con una transición)."
+- Tilt up/down → "Inclina el celular lento hacia arriba/abajo."
+- Slow/Fast zoom in/out → "Acércate (o aléjate) lentamente/rápido con el celular." Preferir moverse físicamente más que usar el zoom digital.
+- Crash zoom → "Acercamiento brusco: se hace en la edición con el efecto de zoom."
+- Dolly in/out, Slider, Truck → "Desliza el celular suavemente (hacia adelante/atrás/al lado) sobre una tabla de cortar o una bandeja con un paño debajo."
+- Pedestal/Crane up-down → "Sube o baja el celular lentamente con los codos apoyados en la mesa."
+- Arc → "Mueve el celular en media luna alrededor del objeto, con los codos apoyados."
+- Orbit → "El celular queda fijo y el objeto gira sobre una base giratoria (plato, tabla sobre un vaso)."
+- Tracking / Follow / Side / Low tracking → "Camina junto al objeto o persona manteniendo el celular a la misma distancia."
+- Handheld → "Celular en las manos, natural, con las dos manos para que no tiemble."
+- First-person view (POV) → "Se graba como si fueran tus ojos, mostrando tus manos."
+- Time-lapse → "Modo time-lapse del celular con el trípode fijo."
+- Tilt-shift → "Efecto miniatura: se aplica en la edición."
+- Pass-through objects → "Pasa el celular por una abertura (marco, caja, tela) hacia la escena."
+
+═══ 3. FORMATO DE SALIDA (respétalo exactamente, en este orden) ═══
+
+📌 RESUMEN
+Una línea con el concepto, otra con duración total y número de tomas.
+
+🧰 LISTA DE MATERIALES (siempre va primero)
+Lista simple con casillas ☐, agrupada en:
+- Para grabar: (celular, trípode o apoyo, luz)
+- Para la escena: (objetos, utensilios, ingredientes o productos de la marca, con cantidades exactas)
+- Fondo: (qué superficie o pared usar)
+- Quién aparece: (la persona, manos, mascota u otro, solo si aplica)
+- Dejar listo antes de grabar: (lo que debe estar preparado)
+
+🎬 TOMAS
+Cada toma con este formato corto, sin tecnicismos:
+
+**Toma 1 · 0:00–0:02**
+- 🎥 Cómo grabarla: instrucción en una frase, estilo receta (ej. "Toma fija con el celular en el trípode, de frente y un poco desde arriba, con el producto centrado.")
+- 👀 Qué se ve: la acción en una frase.
+- ✍️ Texto en pantalla: el texto exacto (y el sonido, si aplica).
+
+Reglas de las tomas:
+- La suma de los tiempos debe dar exactamente la duración total.
+- Si varias tomas son iguales, escribe la instrucción completa solo en la primera y en las demás pon "Igual que la Toma 1, cambia solo [lo que cambia]".
+- Si una toma se arma en la edición y no se graba (ej. portadas, textos, comparaciones), márcala con 💻 "Se arma en la edición" y explica en una frase cómo.
+- Máximo una frase por campo. Nada de datos técnicos como resolución, fps, grados de ángulo, exposición ni nombres de planos en inglés.
+- Usa el nombre de la marca en textos, gancho y CTA cuando aporte.
+
+🔁 ORDEN PARA GRABAR
+Lista numerada corta con el orden recomendado para grabar (agrupando por lugar y por encuadre, no por orden del video), indicando qué tomas se graban en cada paso.
+
+💡 TRES CONSEJOS PARA ESTE VIDEO
+Solo 3, breves, específicos de esta idea (luz natural cerca de una ventana, no mover el celular entre tomas iguales, etc.).
+
+✂️ EDICIÓN EN 4 LÍNEAS
+Música o sonido, estilo del texto, cómo van los cortes, y qué imagen usar de portada.
+
+✅ REVISIÓN
+- La suma de tiempos es igual a la duración total
+- El CTA aparece en pantalla
+- Supuestos que hice: (lista corta)
+
+Cierra ofreciendo ajustes y la siguiente idea: "¿Lo hacemos más corto, más simple o con otro tono? Si quieres, dime cuál idea de la parrilla desarrollamos ahora."
+
+═══ 4. ESTILO ═══
+- Escribe en el idioma en que te respondan, con tono cercano, directo y claro, como si le explicaras a un amigo.
+- Frases cortas. Cero relleno. Cada instrucción debe poder ejecutarse sin interpretarla.
+- Todo el documento debe poder leerse y usarse en menos de 3 minutos.
+- No agregues secciones extra ni "mejoras opcionales" salvo que te las pidan.</pre>
+    </div>
+  </div>
+</section>
+
+<footer>Taller de Guión · Ejercicio práctico</footer>
+
+<script>
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+  document.querySelectorAll('button.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = document.getElementById(btn.dataset.target).innerText;
+      var done = function () {
+        btn.textContent = '¡Copiado!'; btn.classList.add('done');
+        setTimeout(function () { btn.textContent = 'Copiar prompt'; btn.classList.remove('done'); }, 2000);
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text); done(); });
+      } else { fallbackCopy(text); done(); }
+    });
+  });
+</script>
+</body>
+</html>
